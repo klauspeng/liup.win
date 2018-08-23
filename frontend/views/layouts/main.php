@@ -26,40 +26,37 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+<header id="l-header" class="l-header" style="background-image:url(http://otfiq2zfh.bkt.clouddn.com/bg.jpg)">
+    <div class="hdbg"></div>
+    <div class="hdbg2"></div>
+    <div class="m-about">
+        <div id="logo">
+            <a href="/"><img src="http://www.liup.win/usr/themes/GreenGrapes/img/head.jpg" alt=""></a>
+        </div>
+        <h1 class="tit"><a href="/">刘鹏--博客</a></h1>
+        <div class="about">Be vigilant in peace time!</div>
+    </div>
+    <div id="header-canvas" style="width: 100%;height: 100%"></div>
+</header>
 
+<div id="m-nav" class="m-nav">
+    <div class="m-nav-all">
+        <div class="m-logo-url">
+            <img src="http://www.liup.win/usr/themes/GreenGrapes/img/head.jpg">
+            <h3>pthlp</h3>
+        </div>
+        <ul class="nav">
+            <li  class="active">
+                <a href="http://www.liup.win/">首页</a>
+            </li>
+            <li >
+                <a href="http://www.liup.win/start-page.html" title="关于我">关于我</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="wrap">
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
