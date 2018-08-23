@@ -49,10 +49,12 @@ AppAsset::register($this);
             <li  class="active">
                 <a href="http://www.liup.win/">首页</a>
             </li>
-            <li >
+            <li>
                 <a href="http://www.liup.win/start-page.html" title="关于我">关于我</a>
             </li>
+            <?= \common\widgets\Menu::widget() ?>
         </ul>
+
     </div>
 </div>
 
