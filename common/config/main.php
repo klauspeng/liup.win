@@ -22,4 +22,13 @@ return [
 
     // 默认路由
     'defaultRoute' => 'index',
+
+    // gii
+    'bootstrap' => ['gii'],
+    'modules' => [
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['192.168.1.*'] // 按需调整这里
+        ],
+    ],
 ];
