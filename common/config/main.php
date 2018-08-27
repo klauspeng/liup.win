@@ -28,7 +28,7 @@ return [
     'modules' => [
         'gii' => [
             'class' => 'yii\gii\Module',
-            'allowedIPs' => ['192.168.1.*'] // 按需调整这里
+            'allowedIPs' => ['192.168.*.*'] // 按需调整这里
         ],
     ],
 ];
