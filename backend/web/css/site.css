@@ -8,3 +8,7 @@
     height: 240px;
     margin-top: -120px; /* negative half of the height */
 }
+.content{
+    margin-left: 200px;
+    margin-right: 50px;
+}

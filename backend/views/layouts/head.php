@@ -1,4 +1,4 @@
-<ul class="layui-nav layui-row" lay-filter="">
+<ul class="layui-nav layui-row layui-bg-cyan" lay-filter="">
     <li class="layui-nav-item layui-col-md2"><a href=""><?=\common\models\system\SysConfig::findOne('siteName')->value;?></a></li>
     <li class="layui-nav-item layui-col-md1 layui-col-md-offset9">
         <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
@@ -14,9 +14,9 @@
     <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test">
         <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
         <li class="layui-nav-item layui-nav-itemed">
-            <a href="javascript:;">默认展开</a>
+            <a href="javascript:;">系统</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:;">选项1</a></dd>
+                <dd><a href="javascript:;">配置</a></dd>
                 <dd><a href="javascript:;">选项2</a></dd>
                 <dd><a href="">跳转</a></dd>
             </dl>
